@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TechnoStudy Suite" parallel="tests" thread-count="2">
+    <test name="Chrome Tests">
+        <parameter name="browserType" value="chrome"/>
+        <classes>
+            <class name="UserStory_06_.LogoToHomepageTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Firefox Tests">
+        <parameter name="browserType" value="firefox"/>
+        <classes>
+            <class name="UserStory_06_.LogoToHomepageTest"/>
+        </classes>
+    </test>
+</suite>
+

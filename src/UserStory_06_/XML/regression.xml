@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression Tests" parallel="tests" thread-count="2">
+    <test name="Chrome Regression Test" groups="regression">
+        <parameter name="browserType" value="chrome"/>
+        <classes>
+            <class name="UserStory_06_.LogoToHomepageTest">
+                <methods>
+                    <include name="testLogoDisplayedOnAllPages"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Firefox Regression Test" groups="regression">
+        <parameter name="browserType" value="firefox"/>
+        <classes>
+            <class name="UserStory_06_.LogoToHomepageTest">
+                <methods>
+                    <include name="testLogoDisplayedOnAllPages"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
