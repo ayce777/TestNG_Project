@@ -33,7 +33,7 @@ public class Elements {
     public WebElement bizeUlaşın;
 
     @FindBy(xpath = "//a[text()='Campus Login']")
-    public WebElement compusLogin;
+    public WebElement campusLogin;
 
     @FindBy(xpath = "//a[text()='BAŞVUR']")
     public WebElement basvur;
@@ -113,4 +113,7 @@ public class Elements {
 
     @FindBy(xpath = "//span[@class='t-checkbox__labeltext']/a")
     public WebElement kullanimSartları;
+
+    @FindBy(xpath = "//*[text()=' About Campus ']")
+    public WebElement aboutCampus;
 }
